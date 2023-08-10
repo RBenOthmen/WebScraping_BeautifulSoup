@@ -30,8 +30,7 @@ for i in range(len(job_titles)):
 
 file_list = [job_title, company_name, location_name]
 exported = zip_longest(*file_list)
-with open("C:/Users/rami ben othmen/PycharmProjects/webScrapping/beautifulSoup/wuzzuf.csv", "w") as wuzzuf:
+with open("G:/my_projects/WebScraping_BeautifulSoup/wuzzuf.csv", "w") as wuzzuf:
     wr = csv.writer(wuzzuf)
     wr.writerow(["job title", "company name", "location name"])
     wr.writerows(exported)
-
